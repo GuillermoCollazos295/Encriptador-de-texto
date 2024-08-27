@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador-de-texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="presentacion__imagen" src="./assets/Logo.png" alt="Logo Alura">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion__cont1">
+            <h1 class="presentacion__cont1__titulo"> Solo letras minúsculas y sin acentos</h1>
+            <textarea name="texto" id="texto" class="container__input" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="presentacion__botones">
+                <button onclick="encriptarTexto();" class="presentacion__botones__link">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="presentacion__botones__link" id="btnDesencriptar" disabled>Desencriptar</button>
+            </div>
+        </section>
+        <section class="presentacion__cont2">
+            <h2 class="presentacion__cont2__titulo" id="resultado">Ningún mensaje encontrado</h2>
+            <button onclick="copiarTexto();" class="presentacion__botones__link" id="btnCopiar">Copiar Resultado</button>
+            <h3 class="presentacion__cont2__subtitulo">Ingresa el texto que desees encriptar o desencriptar.</h3>
+            <img id="imagen" class="presentacion__imagen" src="./assets/Muñeco.png" alt="Muñeco Encriptador">
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Guillermo Alberto Collazos</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
